@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Form</title>
+    <style>
+        body, html {
+          height: 100%;
+          margin: 0;
+        }
+        
+        .bg {
+          /* The image used */
+          background-image: url('6.jpg');
+        
+          /* Full height */
+          height: 100%; 
+        
+          /* Center and scale the image nicely */
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        </style>
+</head>
+<body>
+   
+    <div class="bg">
+    <br><br><br>
+    <div>
+        <h2 style="border: 3px solid #0d0d0d; width: 185px; height: 32px; color: beige; background-color: rgb(77, 68, 207); font-family:Georgia, 'Times New Roman', Times, serif; position:absolute; left:230px;border-radius: 5px; left: 250px; "> &#160 Student login &#160</h2>
+    </div>
+<br><br><br><br> <br>
+  <center> <div style="border: 5px solid #230696; border-radius: 10px; padding: 35px; width: 450px;position: absolute; left: 230px;">
+
+    <form action="stud.php" method="post">
+    
+            <div>
+                <label style="font-size: 25px;font-weight:bold ; " for="username"> &#160 &#160 Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <br>
+
+            <div>
+                <label style="font-size: 25px;font-weight:bold ;  for="password">&#160 &#160 Password:</label>
+                <input type="password" id="password" name="password" required>
+                <br>
+                <br>
+            </div>
+            <div>
+                <br>
+                <div style="position: absolute; left:240px"><input type="submit" value="Login"></div>
+                <div style="position: absolute; left:300px"><input type="reset" value="Reset Form"></div>
+            </div>
+        </form>
+    </div>
+<p style="position: absolute; left: 280px;top: 360px; font-size: large;">New user?<a href="register.html" class="ro"> Register here</a> </p>
+
+</center>
+
+
+
+    <script>
+        function togglePasswordVisibility() {
+            var passwordField = document.getElementById("password");
+            var passwordToggle = document.getElementById("password-toggle");
+
+            if (passwordField.type === "password") {
+                passwordField.type = "text";
+                passwordToggle.textContent = "Hide Password";
+            } else {
+                passwordField.type = "password";
+                passwordToggle.textContent = "Show Password";
+            }
+        }
+    </script>
+   </div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin login</title>
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+    }
+    
+    .bg {
+      /* The image used */
+      background-image: url('111.jpg');
+    
+      /* Full height */
+      height: 100%; 
+    
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    </style>
+</head>
+<body>
+   
+  <div class="bg">
+  <br><br><br>
+ 
+<br><br><br><br> <br>
+<div>
+  <h1 style=" position: relative;top: -160px; width: 480px; height: 50px; color: rgb(7, 7, 7);  left: 530px;top: -80px;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"><center><b>Admin Login</b></center></h1>
+</div>
+<center> <div style="border: 3px solid #080808; border-radius: 10px;top: 60px; padding: 35px; width: 450px;position: absolute; left: 500px;top: 160px;">
+
+  <form action="admin.php" method="post">
+
+          <div>
+              <label style="font-size: 25px;font-weight:bold ;color: #060606; " for="username">&#160 &#160 Username:</label>
+              <input type="text" id="username" name="username" required>
+          </div>
+          <br>
+
+          <div>
+              <label style="font-size: 25px;font-weight:bold ; color: #090909; for="password">&#160 &#160 Password:</label>
+              <input type="password" id="password" name="password" required>
+              <br>
+              <br>
+          </div>
+          <div>
+              <br>
+              <div style="position: absolute; left:240px"><input type="submit" value="Login"></div>
+              <div style="position: absolute; left:300px"><input type="reset" value="Reset Form"></div>
+          </div>
+      </form>
+  </div>
+
+</center>
+
+
+
+  <script>
+      function togglePasswordVisibility() {
+          var passwordField = document.getElementById("password");
+          var passwordToggle = document.getElementById("password-toggle");
+
+          if (passwordField.type === "password") {
+              passwordField.type = "text";
+              passwordToggle.textContent = "Hide Password";
+          } else {
+              passwordField.type = "password";
+              passwordToggle.textContent = "Show Password";
+          }
+      }
+  </script>
+ </div>
+</body>
+</html>
